@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yaoting Wang - Home Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 
     <style>
+        .photo-and-contact {
+            display: flex; /* 使用 flexbox 布局 */
+            align-items: center; /* 垂直居中对齐 */
+        }
+        .photo-and-contact img {
+            margin-right: 15px; /* 设置图片和文本之间的间距 */
+        }
+        .photo-and-contact p {
+            margin: 0; /* 去掉段落的默认外边距 */
+        }
+    </style>
 
+    <style>
+        .custom-size {
+            font-size: 24px; /* 你可以根据需要调整大小 */
+        }
+        .icon {
+            text-decoration: none;
+        }
+ 
     </style>
 
 </head>
@@ -16,9 +37,10 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" style="color: cornflowerblue;">Home</a></li>
                     <li><a href="../yaotingwangofficial.github.io/yaoting_wang_cv.pdf" target="_blank">Curriculum Vitae</a></li>
-                    <li><a href="project.html">Project</a></li>
+                    <li><a href="project.html">Project & Publication</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
             <br>
@@ -31,45 +53,85 @@
                 <p>你好，我是 [你的名字]。我是一名 [你的职业]，热衷于 [你的兴趣]。我致力于 [你的目标或成就]。</p>
             </section> -->
 
-            <section class="photo-section">
-                <img src="media/yaoting.jpg" alt="My Photo", >
-            </section>
+            <h2>Yaoting WANG</h2>
+            <div class="photo-and-contact">
+                <img src="media/yaoting.jpg" alt="My Photo" width="18%">
+                <div>
+                    <p> Yaoting WANG | 王耀霆 </p>
+                    <br>
+                    <p> Email: yaoting.wang@outlook.com </p>
+                    <br>
+                    <a href="https://scholar.google.com/citations?user=apa4kr4AAAAJ" target="_blank" class="icon">
+                        <img src="./media/google.png" width="15%">
+                    </a>
+                    
+                    <a href="https://github.com/yaotingwangofficial" target="_blank" class="icon">
+                        <img src="./media/github.png" width="15%">
+                    </a>
 
-            <section class="intro-section">
-                <h1>About Me</h1>
-                <p>Hello! I am [Your Name]. I am passionate about [Your Interests]. In my free time, I enjoy [Your Hobbies]. Welcome to my personal website!</p>
-            </section>
-            
-            <section id="skills">
-                <h2>技能</h2>
-                <ul>
-                    <li>技能 1</li>
-                    <li>技能 2</li>
-                    <li>技能 3</li>
-                </ul>
-            </section>
-            
-            <section id="projects">
-                <h2>项目</h2>
-                <div class="project">
-                    <h3>项目名称 1</h3>
-                    <p>项目描述 1</p>
+                    <a href="https://www.zhihu.com/people/wang-yao-ting-29" target="_blank" class="icon">
+                        <img src="./media/zhihu.png" width="15%">
+                    </a>
                 </div>
-                <div class="project">
-                    <h3>项目名称 2</h3>
-                    <p>项目描述 2</p>
+            </div>
+            
+            <div id="intro">
+                <h2>Introduction</h2>
+                <p> Hallo! I'm Yaoting Wang and I'm currently the visiting student of Vision-CAIR in KAUST and advised by 
+                    <a href='https://scholar.google.com.sg/citations?user=5HM8wcgAAAAJ' target="_blank">Dr. Jian Ding</a> 
+                    and <a href='https://scholar.google.com/citations?user=iRBUTOAAAAAJ' target="_blank">Prof. Mohamed Elhoseiny</a>. 
+                    Previously, I was a research assistant at GeWu Lab, Renmin University, advised by <a href='https://dtaoo.github.io/' target="_blank">Prof. Di Hu</a>.
+                </p>
+
+                <p> 
+                    My primary interests lie in multimodal learning, including <b>Audio-Visual Scene Understanding</b> and <b>Affective Computing</b>. 
+                    I am currently working on a project related to <b>multimodal LLMs</b>.
+                </p>
+            </div>
+
+            <div>
+                <section id="edu">
+                    <h2>Education</h2>
+                    <ul>
+                        <li> MSc: University of Edinburgh (2021~2022) </li>
+                        <li> BSc: University of Limerick (2019~2021) </li>
+                        <li> BEng: Shandong University of Science and Technology (2017~2021)</li>
+                    </ul>
+                </section>
+            </div>
+
+            
+            <section id="news">
+                <h2>News</h2>
+                <div class="news_list">
+                    <ul>
+                        <li> 
+                            [09-07-2024] <br> - Glad to have a 
+                            <a href="https://www.bilibili.com/video/BV1dT421r7tm/">speech</a> 
+                            on GAVS at <a href="https://valser.org/">Vision and Learning SEminar (VASLE)</a>!
+                        </li>
+                        <li> 
+                            [01-07-2024] <br> - <span style="color: red;">Three papers</span>
+                            <a href="https://gewu-lab.github.io/Ref-AVS/">Ref-AVS</a>,
+                            <a href="https://arxiv.org/abs/2407.10947">Segmentation-Preference</a> and
+                            <a href="https://arxiv.org/abs/2407.11820">Stepping-Stones</a> 
+                            have been accepted by <b>ECCV 2024</b>! 
+                        </li>
+                        <li>
+                            [01-03-2024] <br> - Joined Vision-CAIR, KAUST!
+                        </li>
+                        <li> 
+                            [09-12-2023] <br> - One paper 
+                            <a target="_blank" href="https://arxiv.org/abs/2309.07929">GAVS</a> 
+                            has been accepted by <b>AAAI 2024</b> main track and ICCV 2023 AV4D workshop! 
+                        </li>
+                        <li> 
+                            [05-01-2023] <br> - Joined GeWu Lab, Gaoling School of Artificial Intelligence, Renmin University of China!
+                        </li>
+                    </ul>
                 </div>
             </section>
             
-            <section id="contact">
-                <h2>联系方式</h2>
-                <p>你可以通过以下方式联系我：</p>
-                <ul>
-                    <li>电子邮件: <a href="mailto:example@example.com">example@example.com</a></li>
-                    <li>电话: 123-456-7890</li>
-                    <li>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">你的 LinkedIn 个人主页</a></li>
-                </ul>
-            </section>
         </main>
         
         <!-- <footer>
