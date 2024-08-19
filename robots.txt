@@ -1,1 +1,2 @@
 Sitemap: https://yaotingwangofficial.github.io/sitemap.txt
+Sitemap: https://yaotingwangofficial.github.io/sitemap.xml
