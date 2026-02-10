@@ -3,107 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yaoting Wang - Gallery</title>
+    <title>Gallery - Yaoting Wang</title>
+    <meta name="description" content="Photo gallery - Travel and food by Yaoting Wang.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-
-    <style>
-        .photo-and-contact {
-            display: flex; /* 使用 flexbox 布局 */
-            align-items: center; /* 垂直居中对齐 */
-        }
-        .photo-and-contact img {
-            margin-right: 15px; /* 设置图片和文本之间的间距 */
-        }
-        .photo-and-contact p {
-            margin: 0; /* 去掉段落的默认外边距 */
-        }
-    </style>
-
-    <style>
-        .custom-size {
-            font-size: 24px; /* 你可以根据需要调整大小 */
-        }
-        .icon {
-            text-decoration: none;
-        }
- 
-    </style>
-
 </head>
 <body>
-    <div class="container">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="https://github.com/yaotingwangofficial/yaotingwangofficial.github.io/raw/main/yaoting_wang_cv.pdf">Curriculum Vitae</a></li>
-                    <li><a href="project.html">Project & Publication</a></li>
-                    <li><a href="gallery.html" style="color: cornflowerblue;">Gallery</a></li>
-                </ul>
-            </nav>
-            <br>
-            <h1>Welcome to Yaoting Wang's Shining Page!</h1>
-        </header>
-        
-        <main>
-            <h1>Travel</h1>
-            <section id="travel">
-                <h2>Edinburgh, UK</h2>
-                <div class="">
-                    <img src="media/gallery/edinburgh_1.jpg" alt="Edinburgh" width="25%">
-                    <img src="media/gallery/edinburgh_2.jpg" alt="Edinburgh" width="25%">
-                    <img src="media/gallery/edinburgh_3.jpg" alt="Edinburgh" width="25%">
-                    <img src="media/gallery/edinburgh_4.jpg" alt="Edinburgh" width="25%">
-                    <img src="media/gallery/edinburgh_5.jpg" alt="Edinburgh" width="25%">
-                    <img src="media/gallery/edinburgh_6.jpg" alt="Edinburgh" width="25%">
-                    <img src="media/gallery/edinburgh_7.jpg" alt="Edinburgh" width="15%">
-                </div>
 
-                <h2>Frankfurt, Germany</h2>
-                To Be Updated
-
-                <h2>Zurich, Switzerland</h2>
-                To Be Updated
-
-                <h2>Paris, France</h2>
-                To Be Updated
-
-                <h2>Milano, Italy</h2>
-                To Be Updated
-            </section>
-            
-            <br>
-            <br>
-            <h1>Food</h1>
-            <section id="travel">
-                <h2>love cooking... sometimes</h2>
-                <div class="">
-                    <!-- <img src="media/gallery/cook/cook_1.jpg" alt="Cook" width="15%"> -->
-                     
-                    <img src="media/gallery/cook/cook_2.jpg" alt="Cook" width="30%">
-                    <img src="media/gallery/cook/cook_3.jpg" alt="Cook" width="30%">
-                    <img src="media/gallery/cook/cook_11.jpg" alt="Cook" width="30%">
-                    <br>
-                    <img src="media/gallery/cook/cook_4.jpg" alt="Cook" width="15%">
-                    <img src="media/gallery/cook/cook_6.jpg" alt="Cook" width="15%">
-                    <img src="media/gallery/cook/cook_7.jpg" alt="Cook" width="15%">
-                    <img src="media/gallery/cook/cook_8.jpg" alt="Cook" width="15%">
-                    <img src="media/gallery/cook/cook_9.jpg" alt="Cook" width="15%">
-                    <img src="media/gallery/cook/cook_12.jpg" alt="Cook" width="15%">
-                    <!-- <img src="media/gallery/cook/cook_10.jpg" alt="Cook" width="15%"> -->
-                    <img src="media/gallery/cook/cook_5.jpg" alt="Cook" width="15%">
-                    <img src="media/gallery/cook/cook_13.jpg" alt="Cook" width="15%">
-                </div>
-
-            </section>
-            
-        </main>
-        
-        <!-- <footer>
-            <p>&copy; 2024 [你的名字]. 版权所有.</p>
-        </footer> -->
+<!-- Top Bar -->
+<div class="topbar">
+    <div class="topbar-inner">
+        <a href="index.html" class="brand">Yaoting Wang</a>
+        <button class="menu-btn" onclick="document.querySelector('.topbar nav').classList.toggle('show')">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="project.html">Publications</a>
+            <a href="gallery.html" class="active">Gallery</a>
+            <a href="https://github.com/yaotingwangofficial/yaotingwangofficial.github.io/raw/main/yaoting_wang_cv.pdf" target="_blank">CV</a>
+        </nav>
     </div>
+</div>
+
+<!-- Page Header -->
+<div class="page-header">
+    <h1>Gallery</h1>
+    <p>Travel &amp; Food</p>
+</div>
+
+<div class="page">
+
+    <!-- Travel -->
+    <div class="sec gallery-sec">
+        <h2>Travel</h2>
+
+        <h3>Edinburgh, UK</h3>
+        <div class="gallery-grid">
+            <img src="media/gallery/edinburgh_1.jpg" alt="Edinburgh" onclick="openLightbox(this)">
+            <img src="media/gallery/edinburgh_2.jpg" alt="Edinburgh" onclick="openLightbox(this)">
+            <img src="media/gallery/edinburgh_3.jpg" alt="Edinburgh" onclick="openLightbox(this)">
+            <img src="media/gallery/edinburgh_4.jpg" alt="Edinburgh" onclick="openLightbox(this)">
+            <img src="media/gallery/edinburgh_5.jpg" alt="Edinburgh" onclick="openLightbox(this)">
+            <img src="media/gallery/edinburgh_6.jpg" alt="Edinburgh" onclick="openLightbox(this)">
+            <img src="media/gallery/edinburgh_7.jpg" alt="Edinburgh" onclick="openLightbox(this)">
+        </div>
+
+        <h3>Frankfurt, Germany</h3>
+        <p class="placeholder">To be updated...</p>
+
+        <h3>Zurich, Switzerland</h3>
+        <p class="placeholder">To be updated...</p>
+
+        <h3>Paris, France</h3>
+        <p class="placeholder">To be updated...</p>
+
+        <h3>Milano, Italy</h3>
+        <p class="placeholder">To be updated...</p>
+    </div>
+
+    <!-- Food -->
+    <div class="sec gallery-sec">
+        <h2>Food</h2>
+
+        <h3>Love cooking... sometimes</h3>
+        <div class="gallery-grid">
+            <img src="media/gallery/cook/cook_2.jpg" alt="Cooking" onclick="openLightbox(this)">
+            <img src="media/gallery/cook/cook_3.jpg" alt="Cooking" onclick="openLightbox(this)">
+            <img src="media/gallery/cook/cook_11.jpg" alt="Cooking" onclick="openLightbox(this)">
+            <img src="media/gallery/cook/cook_4.jpg" alt="Cooking" onclick="openLightbox(this)">
+            <img src="media/gallery/cook/cook_6.jpg" alt="Cooking" onclick="openLightbox(this)">
+            <img src="media/gallery/cook/cook_7.jpg" alt="Cooking" onclick="openLightbox(this)">
+            <img src="media/gallery/cook/cook_8.jpg" alt="Cooking" onclick="openLightbox(this)">
+            <img src="media/gallery/cook/cook_9.jpg" alt="Cooking" onclick="openLightbox(this)">
+            <img src="media/gallery/cook/cook_12.jpg" alt="Cooking" onclick="openLightbox(this)">
+            <img src="media/gallery/cook/cook_5.jpg" alt="Cooking" onclick="openLightbox(this)">
+            <img src="media/gallery/cook/cook_13.jpg" alt="Cooking" onclick="openLightbox(this)">
+        </div>
+    </div>
+
+</div>
+
+<footer class="site-footer">
+    &copy; 2025 Yaoting Wang
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <button class="lightbox-x" onclick="closeLightbox(event)">&times;</button>
+    <img id="lightbox-img" src="" alt="Full size">
+</div>
+
+<script>
+    function openLightbox(img) {
+        var lightbox = document.getElementById('lightbox');
+        var lightboxImg = document.getElementById('lightbox-img');
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+        if (e.target === document.getElementById('lightbox') || e.target.classList.contains('lightbox-x')) {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    }
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+</script>
+
 </body>
 </html>
